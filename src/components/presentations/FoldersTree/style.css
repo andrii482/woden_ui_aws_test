@@ -1,0 +1,16 @@
+.folderTree {
+  padding-bottom: 10px;
+}
+
+.folderImage {
+  max-height: 20px;
+  margin-bottom: 5px;
+}
+
+.ant-tree-treenode {
+  width: 500px;
+}
+
+.smallFolderImage {
+  max-height: 18px;
+}

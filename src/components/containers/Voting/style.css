@@ -1,0 +1,72 @@
+.voting-success-title{
+  height: 28px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #56CCF2;
+}
+.voting-success-message{
+  font-style: normal;
+  font-size: 12px;
+  text-align: center;
+  width: 224px;
+  margin-left: 70px;
+  font-family: Montserrat;
+  color: #8998AC;
+}
+.voting-success-image{
+  margin-left: 125px;
+}
+.ant-table-thead > tr > th {
+  background: #FFFFFF !important;
+}
+.table-text{
+  position: absolute;
+  width: 181px;
+  left: 54px;
+  top: 32.73%;
+  bottom: 32.73%;
+  background: #FFFFFF;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.8357px;
+  line-height: 20px;
+  /* or 143% */
+
+  letter-spacing: -0.0494132px;
+
+  color: #8998AC;
+}
+
+.button-style-result {
+  height: 30px;
+  width: 103px;
+  background: rgba(59, 124, 255, 0.8);
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.button-style-vote {
+  height: 30px;
+  width: 103px;
+  background: #56CCF2;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.table-style {
+  color: #FFFFFF;
+}

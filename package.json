@@ -1,0 +1,132 @@
+{
+  "name": "woden-ui",
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/index.js",
+      "src/serviceWorker.js",
+      "src/state-management/actions"
+    ]
+  },
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/compatible": "^1.0.2",
+    "@ant-design/icons": "^4.0.6",
+    "@cypress/request": "^2.88.5",
+    "@jest/environment": "^26.0.1",
+    "@jest/globals": "^26.0.1",
+    "@react-navigation/native": "^5.4.3",
+    "antd": "^4.1.3",
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "classnames": "^2.2.6",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.0.0",
+    "downloadjs": "^1.4.7",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "form-data": "^2.5.1",
+    "generate-password": "^1.5.1",
+    "history": "^4.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "jsrsasign": "^8.0.15",
+    "node-forge": "^0.9.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-favicon": "0.0.18",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^3.4.1",
+    "react-test-renderer": "^16.13.1",
+    "redux": "^4.0.5",
+    "redux-store-provider": "^2.1.0",
+    "redux-thunk": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "router": "^1.3.5",
+    "unirest": "^0.6.0",
+    "woden": "github:482solutions/woden-api"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@commitlint/cli": "^8.3.5",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.12.0",
+    "commitlint-config-jira": "^1.4.1",
+    "commitlint-plugin-jira-rules": "^1.4.0",
+    "css-loader": "^3.5.2",
+    "cypress": "4.12.1",
+    "cypress-cucumber-preprocessor": "^2.3.1",
+    "cypress-file-upload": "^4.0.6",
+    "cypress-plugin-retries": "^1.5.2",
+    "enzyme": "^3.11.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-loader": "3.0.2",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-flowtype": "3.13.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "husky": "^4.2.5",
+    "js-sha256": "^0.9.0",
+    "mocha": "^7.2.0",
+    "mochawesome": "^6.1.0",
+    "redux-mock-store": "^1.5.4",
+    "request": "^2.88.2",
+    "style-loader": "^1.1.4",
+    "svg-inline-loader": "^0.8.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "startci": "webpack-dev-server --mode none",
+    "build": "webpack --mode production",
+    "test": "react-scripts test",
+    "coverage": "npm test -- --coverage --watchAll=false",
+    "cypress:open": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome --spec \"cypress/integration/*/*.feature\"",
+    "cy:run:firefox": "cypress run --browser firefox --spec \"cypress/integration/*/*.feature\"",
+    "cypress:tags": "cypress run -e TAGS='@step'",
+    "cypress:report": "cypress run --spec cypress/integration/API/POST_user.feature --reporter mochawesome && open ./mochawesome-report/mochawesome.html",
+    "lint:js": "eslint src/**/*.js",
+    "fix:js": "eslint src/**/*.js --fix",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint:js",
+      "pre-push": "npm run lint:js"
+    }
+  },
+  "proxy": "http://localhost:3000"
+}

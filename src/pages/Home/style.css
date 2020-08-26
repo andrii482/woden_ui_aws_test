@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+}
+
+.emptyHere {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main {
+  background: #F9FAFC;
+  min-height: 100vh;
+}
+
+.driveItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 180px;
+  width: 200px;
+  padding: 34px 16px 16px 16px;
+  margin-left: 15px;
+  outline: none;
+}
+
+.driveItem:hover {
+  border: 1px solid #3B7CFF;
+  transition: .5s;
+}
+
+.itemData {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  color: #8998AC;
+  font-size: 14px;
+}
+
+.folderTitle, .fileTitle{
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fileInfoWrapper, .accessListWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 350px;
+  max-width: 350px;
+  font-style: normal;
+  padding: 24px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.infoTitle {
+  color: #8999AC;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.infoColumnTitle {
+  margin-top: 40px;
+  font-weight: 600;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #3B7CFF;
+}
+
+.versionHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.versionItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.versionCode {
+  color: #333333;
+}
+
+.versionAuthor {
+  color: #AEB8C7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.versionDownload {
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+}
+
+.owner {
+  color: #AEB8C7;
+  font-weight: 600;
+}
+
+.ownerName {
+  color: #333333;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.sharedUser {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  color: #333333;
+}
+
+.permissionIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.revokeAccess {
+  cursor: pointer;
+}
+

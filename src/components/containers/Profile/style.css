@@ -1,0 +1,8 @@
+.homeProfile{
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  margin-left: 15px;
+}

@@ -1,0 +1,17 @@
+#LoginFileDrop {
+  height: 130px;
+  width: 360px;
+  margin-top: 21px;
+}
+
+#LoginFileDrop p {
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: -0.06px;
+  padding: 0px 10px;
+}
+
+#LoginFileDrop {
+  border-radius: 4px;
+  min-height: 185px;
+}
